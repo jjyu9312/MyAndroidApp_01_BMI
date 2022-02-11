@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyApp_01_BMI</string>
+    <string name="height">신장(cm)</string>
+    <string name="weight">체중(kg)</string>
 </resources>

@@ -5,30 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
+    <!--
+    padding, margin : 화면 간 공백 띄우기
+    margin은 안에 여백을 주고 padding은 밖에 여백을 줌
+    -->
+
     <TextView
-        android:text="신장(cm)"
+        android:id="@+id/textView1"
+        android:text="@string/height"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <!-- 입력 받을 수 있는 폼 -->
     <EditText
+        android:id="@+id/heightEditText"
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"/>
 
     <TextView
-        android:text="체중(kg)"
+        android:id="@+id/textView2"
+        android:text="@string/weight"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <!-- 입력 받을 수 있는 폼 -->
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/weightEditText"
+        android:layout_marginTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"/>
+
+    <Button
+        android:id="@+id/resultBotton"
+        android:text="확인하기"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 
