@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
                 // @setOnClickListener 이걸 하지 않게 되면 onCreate setOnClickListener 중 어떤 부분에서 return 할 지 모름
                 // 추가해줌으로써 setOnClickListener를 빠져나옴.
-
             }
 
             val height = heightEditText.text.toString().toInt()
